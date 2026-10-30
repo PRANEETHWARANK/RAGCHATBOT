@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RAG AI — Intelligent Knowledge Chatbot
 
 A production-quality, full-stack **Retrieval-Augmented Generation (RAG)** chatbot web application with **persistent conversation memory**, **multi-document support**, and **follow-up question understanding**.
@@ -197,3 +198,6 @@ npm run dev
 | `npm run build` | Build React production bundle |
 | `npm run ingest` | CLI ingest all files in `documents/` |
 | `npm run cli` | Original terminal-based RAG chat |
+=======
+# RAGCHATBOT
+>>>>>>> dd1f637dfce0fc3048e988cd533b56704a1ad509
