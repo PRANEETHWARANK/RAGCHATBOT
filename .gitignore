@@ -1,0 +1,8 @@
+node_modules/
+uploads/
+.env
+frontend/dist/
+.DS_Store
+*.log
+documents/
+langchain/

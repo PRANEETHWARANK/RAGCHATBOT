@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Custom prose styles for ReactMarkdown */
+.prose pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.prose code {
+  background-color: #f1f5f9;
+  color: #7c3aed;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.3rem;
+  font-size: 0.82em;
+}
+
+.prose pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.prose p { margin-bottom: 0.6rem; }
+.prose p:last-child { margin-bottom: 0; }
+.prose ul { padding-left: 1.25rem; margin-bottom: 0.6rem; }
+.prose ol { padding-left: 1.25rem; margin-bottom: 0.6rem; }
+.prose li { margin-bottom: 0.2rem; }
+.prose h1,.prose h2,.prose h3 { margin: 0.8rem 0 0.4rem; font-weight: 700; }
+.prose blockquote {
+  border-left: 3px solid #7c3aed;
+  padding-left: 1rem;
+  color: #64748b;
+  margin: 0.6rem 0;
+}
+.prose a { color: #7c3aed; text-decoration: underline; }
+.prose strong { font-weight: 700; }
+
+/* Smooth scrollbar */
+* { scrollbar-width: thin; scrollbar-color: #e2e8f0 transparent; }
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

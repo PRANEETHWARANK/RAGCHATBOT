@@ -1,0 +1,42 @@
+{
+  "name": "ragchatbot",
+  "version": "2.0.0",
+  "description": "Intelligent RAG Chatbot with persistent conversation memory — Node.js + React + Ollama + MongoDB",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "server": "node src/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently -k -n \"server,client\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix frontend",
+    "cli": "node src/index.js",
+    "ingest": "node src/rag/ingest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^1.3.2",
+    "@langchain/ollama": "^1.3.0",
+    "@langchain/textsplitters": "^1.0.2",
+    "alasql": "^4.22.0",
+    "cors": "^2.8.6",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "katex": "^0.19.1",
+    "langchain": "^1.6.0",
+    "mammoth": "^1.9.0",
+    "mongodb": "^7.7.0",
+    "multer": "^2.5.0",
+    "pdf-parse": "^1.1.1",
+    "react-markdown": "^10.1.0",
+    "rehype-katex": "^1.2.0",
+    "remark-math": "^3.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
